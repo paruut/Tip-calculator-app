@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-grayish-cyan);
+  font-family: "Space Mono", monospace;
+}
+
+:root {
+  /* primary */
+
+  --strong-cyan: hsl(172, 67%, 45%);
+
+  /* neutral */
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --green-btn: hsl(166deg 53% 43%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* section */
+
+.section {
+  background-color: var(--white);
+  border-radius: 1rem;
+  display: flex;
+  padding: 1.5rem;
+}
+
+/* right panel */
+
+.right {
+  background-color: var(--very-dark-cyan);
+  height: 25rem;
+  width: 25rem;
+  border-radius: 1.2rem;
+}
+
+.tip-amount h1 {
+  color: hsl(166deg 66% 52% / 88%);
+  font-size: 3rem;
+}
+
+.tip-amount h2 {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.tip-amount h2 span {
+  font-size: 1rem;
+  color: var(--dark-grayish-cyan);
+}
+
+.right button {
+  width: 20rem;
+  height: 3rem;
+  background-color: var(--green-btn);
+  color: var(--very-dark-cyan);
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 650ms ease;
+}
+
+.tip-amount {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.btnreset {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+/* left panel */
+
+.left {
+  background-color: var(--white);
+  width: 25rem;
+  height: 25rem;
+  border-radius: 20px;
+  /* margin-top: 1.3rem; */
+}
+
+.left input {
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--very-dark-cyan);
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 350px;
+  outline: none;
+  text-align: end;
+  padding: 1rem;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+p {
+  color: var(--dark-grayish-cyan);
+}
+
+.tipselect {
+  margin: 3rem 0;
+}
+
+.tipselect input {
+  height: 40px;
+  width: 100px;
+  border-radius: 6px;
+  font-weight: 700;
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--white);
+  border: none;
+  outline: none;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  margin: 0.3rem 0.1rem;
+  text-align: center;
+  padding: 0.7rem;
+}
+
+.tipselect input:focus {
+  background-color: var(--light-grayish-cyan2);
+  color: var(--very-dark-cyan);
+  border-radius: 6px;
+  border: 1px solid var(--dark-grayish-cyan);
+  text-align: right;
+  cursor: pointer;
+}
+
+.left > img {
+  z-index: 99;
+  position: absolute;
+  padding: 0.7rem;
+}
+
+.numberpeople > img {
+  z-index: 99;
+  position: absolute;
+  padding: 0.7rem;
+}
+
+/* buttons */
+
+button {
+  height: 40px;
+  width: 100px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--very-dark-cyan);
+  margin: 0.3rem 0.1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.attribution {
+  margin-top: 4rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* hover */
+
+button:hover {
+  background-color: rgb(149, 236, 207);
+  border: 2px solid rgb(149, 236, 207);
+  color: var(--very-dark-cyan);
+}
+
+input:hover {
+  border: 2px solid rgb(149, 236, 207);
+}
+
+/* mobile-devices */
+
+@media only screen and (max-width: 860px) {
+  .section{
+    flex-direction: column;
+    width: 390px;
+    height: 750px;
+  }
+  .right{
+    width: 21.5rem;
+  }
+  .right button{
+    width: 16rem;
+    margin-bottom: 2rem;
+  }
+  .left{
+    width: 21.5rem;
+  }
+  .tipselect{
+    margin: 1rem 0;
+  }
+  .attribution{
+    margin-bottom: 1rem;
+  }
+}

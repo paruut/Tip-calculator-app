@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="/images/logo.svg" alt="logo">
+</div>
+
+<div class="container">
+  <div class="section">
+    <div class="left">
+      <p>Bill</p>
+      <img src="/images/icon-dollar.svg" alt="icondollar">
+      <input type="tel" id="billinput" required="" autocomplete="off">
+      <div class="tipselect">
+        <p>Select Tip %</p>
+        <button class="btntip">5%</button>
+        <button class="btntip">10%</button>
+        <button class="btntip">15%</button>
+        <button class="btntip">25%</button>
+        <button class="btntip">50%</button>
+        <input type="tel" id="btntipcustom" placeholder="Custom">
+      </div>
+      <div class="numberpeople">
+        <p>Number of People</p>
+        <img src="/images/icon-person.svg" alt="iconperson">
+        <input type="number" id="peopleinput" min="1" required>
+      </div>
+    </div>
+    <div class="right">
+      <div class="tip-amount">
+        <h2>
+          Tip Amount <br>
+          <span>/ person</span>
+        </h2>
+        <h1 id="moneytip">$0.00</h1>
+      </div>
+      <div class="tip-amount">
+        <h2>
+          Total <br>
+          <span>/ person</span>
+        </h2>
+        <h1 id="money-tiptotal">$0.00</h1>
+      </div>
+      <div class="btnreset">
+        <button type="reset" id="btnreset">RESET</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Patryk Rutkowski</a>.
+  </div>
+  <script src="https://kit.fontawesome.com/4d129299c7.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
